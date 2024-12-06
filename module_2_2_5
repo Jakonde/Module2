@@ -1,0 +1,19 @@
+def get_matrix(n,m,value):
+    matrix=[]
+    for i in range (0,n):
+        a=[]
+        matrix.append(a)
+        for j in range (0,m):
+            a.append(value)
+    
+
+    return matrix
+
+
+
+res1=get_matrix(9,2,8)
+res2=get_matrix(5,5,5)
+res3=get_matrix(0,2,1)
+print(res1)
+print(res2)
+print(res3)
