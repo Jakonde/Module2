@@ -1,0 +1,29 @@
+import random
+
+
+def field():
+    number = range(3, 20 + 1)
+    screen = random.choice(number)
+    return screen
+
+
+n = field()
+
+list_ = range(1, 20)
+list_1 = list(list_)  # создание списка
+l = len(list_1)
+res = []
+for i in range(l):
+    if i <= 0:
+        continue
+    for j in range(i + 1, l + 1):
+        if i + j >= 21:
+            break
+        # print(f'{i}{j}={i+j}')
+
+        if n % (i + j) == 0:
+            res.append(f'{i}{j}')
+
+result = "".join(res)
+
+print(f'{n} = {result}')
